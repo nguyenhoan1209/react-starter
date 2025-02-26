@@ -1,11 +1,12 @@
 # React Shadcn Starter
 
 React + Vite + TypeScript template for building apps with shadcn/ui.
+Node 18.17.1
 
 ## Getting Started
 
 ```
-git clone https://github.com/hayyi2/react-shadcn-starter.git new-project
+git clone https://github.com/nguyenhoan1209/react-starter.git new-project
 cd new-project
 npm install
 npm run dev
@@ -22,6 +23,7 @@ npm run dev
 - [x] Github action deploy github pages
 
 ## Deploy `gh-pages`
+
 - change `basenameProd` in `/vite.config.ts`
 - create deploy key `GITHUB_TOKEN` in github `/settings/keys`
 - commit and push changes code
@@ -29,15 +31,17 @@ npm run dev
 - run action `Build & Deploy`
 
 ### Auto Deploy
+
 - change file `.github/workflows/build-and-deploy.yml`
 - Comment on `workflow_dispatch`
 - Uncomment on `push`
+
 ```yaml
 # on:
 #   workflow_dispatch:
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 ```
 
 ## Features
@@ -71,7 +75,3 @@ react-shadcn-starter/
 ├── tsconfig.json      # TypeScript configuration
 └── vite.config.ts     # Vite configuration
 ```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/hayyi2/react-shadcn-starter/blob/main/LICENSE) file for details. 
